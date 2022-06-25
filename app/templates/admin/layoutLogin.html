@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% block head %}
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link href="{{ url_for('static',filename='admin/css/styles.css') }}" rel="stylesheet" />
+            <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+            <title>Panel de Administración</title>
+        {% endblock %}
+    </head>
+    <body class="bg-primary">
+        <!-- Your page content -->
+        {% block content %}{% endblock %}
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="{{ url_for('static',filename='admin/js/scripts.js') }}"></script>
+    </body>
+</html>

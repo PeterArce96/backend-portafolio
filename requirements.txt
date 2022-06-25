@@ -1,0 +1,6 @@
+flask
+firebase_admin
+python-dotenv
+pyrebase4
+bootstrap-flask
+Flask-WTF
