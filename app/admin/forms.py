@@ -17,3 +17,12 @@ class BiografiaForm(FlaskForm):
     github = StringField('Url GitHub',validators=[DataRequired()])
     linkedin = StringField('Url linkedIn',validators=[DataRequired()])
     twitter = StringField('Url Twitter',validators=[DataRequired()])
+    submit = SubmitField('Actualizar Datos')
+
+class ProyectoForm(FlaskForm):
+    codigo = StringField('Codigo',validators=[DataRequired()])
+    nombre = StringField('Nombre',validators=[DataRequired()])
+    descripcion = StringField('Descripción',validators=[DataRequired()])
+    imagen = StringField('Imagen',validators=[DataRequired()])
+    url = StringField('Url',validators=[DataRequired()])
+    submit = SubmitField('Guardar')
